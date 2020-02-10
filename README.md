@@ -14,8 +14,6 @@ This program will produce several PNG files in the cwd with the following name f
 `grid-(id).png`
 where `(id)` is the internal ID of each individual image stored in the HEIC file.
 
-The provided statically compiled Linux amd64 executable can be used directly. However, `ffmpeg` executable still have to be present in `$PATH` for the program to work properly.
-
 ## Dependencies
 
 1. nokiatech's `heif` module
@@ -32,4 +30,4 @@ The linked `heif` submodule has to be built first. To build this module:
 3. run `cmake ../srcs`
 4. run `cmake --build . -j (numthrd) `, where `(numthrd)` is the number of threads to spawn by cmake to speed up build process.
 
-After the `heif` module has been built successfully, `cd` to the base directory of this repository, and run `make` to build this program (or `make heifread_static` to build the statically linked version of this program).
+After the `heif` module has been built successfully, `cd` to the base directory of this repository, and run `make` to build this program.
