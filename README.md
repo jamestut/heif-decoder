@@ -17,7 +17,7 @@ where `(id)` is the internal ID of each individual image stored in the HEIC file
 ## Dependencies
 
 1. nokiatech's `heif` module
-   (only tested against commit tag `v3.5.0`) for reading the HEIF file and encoded samples.
+   (only tested against commit tag `v3.7.0`) for reading the HEIF file and encoded samples.
 2. `ffmpeg` executable in `$PATH`
    Required for decoding the HEIF samples (most likely in `hvc1` format) and re-encoding stitched image to a proper image format, such as `PNG`.
 
